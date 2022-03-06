@@ -153,7 +153,9 @@ a:hover {
 }
 
 .contact {
+	display: grid;
 	text-align: center;
+	align-content: center;
 }
 .contact__title {
 	position: static;
@@ -169,6 +171,7 @@ a:hover {
 	padding: 40px;
 	margin-top: 30px;
 	align-content: center;
+	align-self: center;
 	background-color: #3302b900;
 }
 .contact__form-input {
