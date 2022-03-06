@@ -233,7 +233,19 @@ a:hover {
 		margin: 20px;
 	}
 }
+@media (min-width: 810px) {
+}
 @media (max-width: 1320px) {
+	.menu {
+		text-align: start;
+		&__item {
+			display: none;
+
+			&--hidden {
+				display: inline;
+			}
+		}
+	}
 }
 @media (max-width: 570px) {
 }
