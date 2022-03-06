@@ -22,14 +22,14 @@
 					<span style="color: #d7d7d7"><i class="fa-solid fa-bars fa-lg"></i></span>
 				</li>
 				<li class="menu__item" id="Logo"><img src="/img/techblu.png" alt="logo" class="menu__logo" style="width: 160px" /></li>
-				<li class="menu__item"><a href="#Home">home</a></li>
-				<li class="menu__item"><a href="#Sobre">a empresa</a></li>
-				<li class="menu__item"><a href="#Projects">projetos</a></li>
-				<li class="menu__item"><a href="#Contato">contato</a></li>
+				<li class="menu__item"><a href="#home">home</a></li>
+				<li class="menu__item"><a href="#about">a empresa</a></li>
+				<li class="menu__item"><a href="#projects">projetos</a></li>
+				<li class="menu__item"><a href="#contact">contato</a></li>
 			</ul>
 		</nav>
-		<section class="home">
-			<div class="home__content">
+		<section class="home c-grid" id="home">
+			<div class="home__content c-grid__item">
 				<h2 class="home__title headerSection" style="animation: bounceInDown; animation-duration: 2s">tech<span style="color: rgb(62, 62, 255)">blu</span></h2>
 				<p class="home__description paragraphSection">
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex vero porro quaerat hic, minima architecto. Sed omnis facilis quibusdam nesciunt adipisci perspiciatis doloremque
@@ -38,10 +38,12 @@
 					perferendis ea alias
 				</p>
 			</div>
-			<img src="/img/home.png" alt="comp" class="home__img ImgSection" />
+			<div class="c-grid__item">
+				<img src="/img/home.png" alt="comp" class="home__img imgSection" />
+			</div>
 		</section>
-		<section class="about">
-			<div class="about__content">
+		<section class="about c-grid" id="about">
+			<div class="about__content c-grid__item">
 				<h2 class="about__title headerSection">a empresa</h2>
 				<p class="about__description paragraphSection">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestiae error aliquam delectus explicabo. Exercitationem sint, cum maxime assumenda quidem quam laudantium
@@ -50,73 +52,75 @@
 					eum itaque expedita natus eveniet, modi minus animi saepe repellat vel tenetur enim nulla sit maiores
 				</p>
 			</div>
-			<img src="/img/Sobre.png" alt="comp" class="about__img ImgSection" />
+			<div class="c-grid__item">
+				<img src="/img/Sobre.png" alt="comp" class="about__img imgSection" />
+			</div>
 		</section>
-		<div class="projects">
+		<div class="projects" id="projects">
 			<h2 class="projects__title headerSection">projetos</h2>
-			<div id="projects__conteiner">
-				<div class="projects__item">
+			<div class="projects__conteiner">
+				<div class="projects__item project__item--highLight">
 					<a href="https://www.sinpojud.org.br">
 						<h3><span style="color: rgb(62, 62, 255)">sinpo</span><span style="color: red">jud</span></h3>
-						<img src="/img/sinpojud.jpg" alt="6" style="width: 300px; height: 200px" />
+						<img class="projects__item-img" src="/img/sinpojud.jpg" alt="img" />
 					</a>
 				</div>
 				<div class="projects__item">
 					<a href="https://google.com">
 						<h3 class="projects__item__title">Projeto 1</h3>
-						<img src="/img/placeholder.png" alt="6" style="width: 300px; height: 200px" />
+						<img class="projects__item-img" src="/img/placeholder.png" alt="img" />
 					</a>
 				</div>
 				<div class="projects__item">
 					<a href="https://google.com">
 						<h3 class="projects__item__title">Projeto 1</h3>
-						<img src="/img/placeholder.png" alt="6" style="width: 300px; height: 200px" />
+						<img class="projects__item-img" src="/img/placeholder.png" alt="img" />
 					</a>
 				</div>
 				<div class="projects__item">
 					<a href="https://google.com">
 						<h3 class="projects__item__title">Projeto 1</h3>
-						<img src="/img/placeholder.png" alt="6" style="width: 300px; height: 200px" />
+						<img class="projects__item-img" src="/img/placeholder.png" alt="img" />
 					</a>
 				</div>
 				<div class="projects__item">
 					<a href="https://google.com">
 						<h3 class="projects__item__title">Projeto 1</h3>
-						<img src="/img/placeholder.png" alt="6" style="width: 300px; height: 200px" />
+						<img class="projects__item-img" src="/img/placeholder.png" alt="img" />
 					</a>
 				</div>
 				<div class="projects__item">
 					<a href="https://google.com">
 						<h3 class="projects__item__title">Projeto 1</h3>
-						<img src="/img/placeholder.png" alt="6" style="width: 300px; height: 200px" />
+						<img class="projects__item-img" src="/img/placeholder.png" alt="img" />
 					</a>
 				</div>
 			</div>
 
 			<!-- <img src="/img/Serviços.png" alt="comp" class="ImgSection" /> -->
 		</div>
-		<div class="contact">
+		<div class="contact" id="contact">
 			<h2 class="contact__title headerSection">contato</h2>
 			<form action="" method="" class="contact__form">
 				<label for="name">Nome: </label>
 				<br />
-				<input type="text" name="name" id="name" placeholder="Name" />
+				<input class="contact__form-input input-sm" type="text" name="name" id="name" placeholder="Name" />
 				<br />
 				<label for="email">Email: </label>
 				<br />
-				<input type="email" name="email" id="email" value="exemplo@gmail.com" />
+				<input class="contact__form-input input-sm" type="email" name="email" id="email" value="exemplo@gmail.com" />
 				<br />
 				<label for="text">Mensagem: </label>
 				<br />
-				<textarea name="text" id="text" cols="30" rows="5"></textarea>
+				<textarea class="contact__form-input" name="text" id="text" cols="30" rows="5"></textarea>
 				<br />
-				<button type="submit">Submit</button>
+				<button class="contact__form-button" type="submit">Submit</button>
 			</form>
 			<br />
-			<div id="redes">
-				<a class="contato__redes" href="#"><i class="fa-brands fa-facebook-square fa-4x"></i></a>
-				<a class="contato__redes" href="#"><i class="fa-brands fa-youtube fa-4x"></i></a>
-				<a class="contato__redes" href="#"><i class="fa-brands fa-instagram fa-4x"></i></a>
+			<div class="contact__list">
+				<a class="contact__media" href="#"><i class="fa-brands fa-facebook-square fa-4x"></i></a>
+				<a class="contact__media" href="#"><i class="fa-brands fa-youtube fa-4x"></i></a>
+				<a class="contact__media" href="#"><i class="fa-brands fa-instagram fa-4x"></i></a>
 			</div>
 		</div>
 	</body>
