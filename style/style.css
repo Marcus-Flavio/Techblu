@@ -202,6 +202,9 @@ a:hover {
 	.menu__item {
 		display: none;
 	}
+	.menu__logo {
+		display: inline;
+	}
 	.menu__item--hidden {
 		display: inline;
 	}
