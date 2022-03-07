@@ -228,12 +228,17 @@ a:hover {
 		display: none;
 		margin: 0;
 		margin-right: 10px;
+		/* float: none;
+		display: block;
+		text-align: left; */
 	}
 	.menu__logo {
 		display: inline;
 	}
 	.menu__item--hidden {
 		display: inline;
+	}
+	.menu.responsive {
 	}
 	.projects__conteiner {
 		width: 100%;

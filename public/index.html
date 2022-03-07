@@ -12,6 +12,7 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
+		<script src="/src/responsive.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link rel="stylesheet" href="/style/style.css" />
 	</head>
@@ -19,7 +20,9 @@
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__item menu__item--hidden">
-					<span style="color: #d7d7d7"><i class="fa-solid fa-bars fa-lg"></i></span>
+					<span style="color: #d7d7d7"
+						><a href="javascript:void(0);" onclick="nav()"><i class="fa-solid fa-bars fa-lg"></i></a
+					></span>
 				</li>
 				<li class="menu__item menu__logo" id="Logo"><img src="/img/techblu.png" alt="logo" style="width: 160px" /></li>
 				<li class="menu__item"><a href="#home">home</a></li>
