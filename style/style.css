@@ -82,7 +82,8 @@ a:hover {
 	background: linear-gradient(to bottom, #3402b9, #2e0699, #06044b) no-repeat center center fixed;
 }
 
-.menu {
+.menu,
+.menu-responsive {
 	background-color: rgba(0, 0, 0, 0.1);
 	position: fixed;
 	z-index: 1;
@@ -217,8 +218,15 @@ a:hover {
 		grid-template-rows: 50% 50%;
 		grid-template-columns: 100%;
 	}
+	.menu-responsive,
 	.menu {
 		text-align: start;
+	}
+	.menu-responsive {
+		height: fit-content;
+		background-color: rgba(0, 0, 0, 0.3);
+		animation: fadeInDown;
+		animation-duration: 2s;
 	}
 	.menu__list {
 		margin: 0;
@@ -228,17 +236,29 @@ a:hover {
 		display: none;
 		margin: 0;
 		margin-right: 10px;
-		/* float: none;
+	}
+	.menu-responsive .menu__item:not(:first-child) {
+		float: none;
 		display: block;
-		text-align: left; */
+		height: 100%;
+		text-align: start;
+		margin-top: 10px;
+		padding-bottom: 5px;
+		font-size: medium;
+	}
+	.menu-responsive .menu__item:not(:first-child, .menu__logo):hover {
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
 	}
 	.menu__logo {
 		display: inline;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin: 10px;
 	}
 	.menu__item--hidden {
 		display: inline;
-	}
-	.menu.responsive {
 	}
 	.projects__conteiner {
 		width: 100%;
