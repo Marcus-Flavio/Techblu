@@ -241,13 +241,14 @@ a:hover {
 		float: none;
 		display: block;
 		height: 100%;
+		width: auto;
 		text-align: start;
 		margin-top: 10px;
 		padding-bottom: 5px;
 		font-size: medium;
 	}
 	.menu-responsive .menu__item:not(:first-child, .menu__logo):hover {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.1);
 		border-radius: 10px;
 	}
 	.menu__logo {

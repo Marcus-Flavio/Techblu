@@ -12,7 +12,14 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("u8Z4Ds9tZofhSzYbC");
+			})();
+		</script>
 		<script src="/src/responsive.js"></script>
+		<script src="/src/email.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link rel="stylesheet" href="/style/style.css" />
 	</head>
@@ -104,20 +111,20 @@
 		</section>
 		<section class="contact" id="contact">
 			<h2 class="contact__title headerSection">contato</h2>
-			<form action="" method="" class="contact__form">
+			<form action="" method="" class="contact__form" id="contact__form">
 				<label for="name">Nome: </label>
 				<br />
-				<input class="contact__form-input input-sm" type="text" name="name" id="name" placeholder="Name" />
+				<input class="contact__form-input input-sm" type="text" name="from_name" id="name" placeholder="Name" />
 				<br />
 				<label for="email">Email: </label>
 				<br />
-				<input class="contact__form-input input-sm" type="email" name="email" id="email" value="exemplo@gmail.com" />
+				<input class="contact__form-input input-sm" type="email" name="user_email" id="email" value="exemplo@gmail.com" />
 				<br />
 				<label for="text">Mensagem: </label>
 				<br />
-				<textarea class="contact__form-input" name="text" id="text" cols="30" rows="5"></textarea>
+				<textarea class="contact__form-input" name="message" id="text" cols="30" rows="5"></textarea>
 				<br />
-				<button class="contact__form-button" type="submit">Submit</button>
+				<button class="contact__form-button" type="submit" onclick="send()">Submit</button>
 			</form>
 			<br />
 			<div class="contact__list">
