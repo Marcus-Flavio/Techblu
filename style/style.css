@@ -257,6 +257,7 @@ a:hover {
 		right: 0;
 		top: 0;
 		margin: 10px;
+		margin-right: 20px;
 	}
 	.menu__item--hidden {
 		display: inline;
