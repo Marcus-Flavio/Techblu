@@ -46,7 +46,7 @@ a:hover {
 	position: relative;
 	left: 6vw;
 	display: block;
-	z-index: 1;
+	z-index: 0;
 	font-size: 50px;
 	font-variant: small-caps;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -57,9 +57,9 @@ a:hover {
 .paragraphSection {
 	position: relative;
 	left: 6vw;
-	z-index: 1;
+	z-index: 0;
 	color: #8a87b3;
-	font-size: 23px;
+	font-size: 18px;
 	text-align: left;
 }
 .c-grid {
@@ -108,10 +108,8 @@ a:hover {
 .menu__item--hidden {
 	display: none;
 }
-.menu__item a:hover {
-	font-size: large;
-}
 .menu__logo {
+	margin-left: 0;
 	position: relative;
 	animation: pulse;
 	animation-duration: 3s;
@@ -198,6 +196,7 @@ a:hover {
 }
 .contact__list {
 	align-items: center;
+	margin: 10px;
 }
 .contact__media {
 	margin: 20px;
@@ -208,11 +207,18 @@ a:hover {
 }
 
 @media (max-width: 1070px) {
+	body {
+		overflow-x: hidden; /* Hide vertical scrollbar */
+	}
+	section {
+		margin: 0;
+	}
 	.headerSection {
 		left: 0;
 	}
 	.paragraphSection {
 		left: 1vw;
+		width: 98%;
 	}
 	.c-grid {
 		grid-template-rows: 50% 50%;
@@ -280,7 +286,10 @@ a:hover {
 		font-size: 9vw;
 	}
 	.paragraphSection {
-		font-size: 3.5vw;
+		font-size: 4vw;
+	}
+	.menu__logo {
+		margin: 10px;
 	}
 	.imgSection {
 		position: relative;
@@ -288,7 +297,7 @@ a:hover {
 		width: 100vw;
 	}
 	.contact__form {
-		width: 100%;
+		width: 90%;
 	}
 	.contact__form-input {
 		width: 90%;
